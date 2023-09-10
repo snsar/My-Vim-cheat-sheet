@@ -5,6 +5,7 @@
 - [Operator](#point_right-tìm-kí-tự)
 - [Text Objects](#point_right-text-objects)
 - [Registers](#-registers-)
+- [Buffers](#-buffers)
 ## :point_right: Di chuyển theo trục dọc:
 
 - j ->  xuống 👇
@@ -93,4 +94,11 @@ Example:
 
 > Công thức: Register + textObject 👌
 
-##  
+## 👉 Buffers
+> Thông thường các file không được vim mở trực tiếp mà vim sẽ mở 1 file buffer
+- dùng lệnh :ls hoặc lệnh :buffers  để xem các file trong buffer
+- bufferadd : để thêm file vào trong buffer
+- :bnext, hoặc :bn  : đến file sau trong buffer
+- :bprevious hoặc :bp : đến file đằng trước
+- :bfirst : đến file ban đầu
+- :buffer <number> : đến buffer số <number>
