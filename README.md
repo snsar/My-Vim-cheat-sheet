@@ -1,11 +1,13 @@
-## Table of content
-- [Di chuyển theo trục dọc](#di-chuyển-theo-trục-dọc)
-- [Di chuyển theo trục ngang](#di-chuyển-theo-trục-ngang)
-- [Tìm kí tự](#tìm-kí-tự)
-## Di chuyển theo trục dọc:
+## :point_right: Table of content
+- [Di chuyển theo trục dọc](#point_right-di-chuyển-theo-trục-dọc)
+- [Di chuyển theo trục ngang](#point_right-di-chuyển-theo-trục-ngang)
+- [Tìm kí tự](#point_right-tìm-kí-tự)
+- [Operator](#point_right-tìm-kí-tự)
+- [Text Objects](#point_right-text-objects)
+## :point_right: Di chuyển theo trục dọc:
 
 - j ->  xuống
-- k -> lên
+- k -> lên :point_right:
 - { : di chuyển lên paragraph
 - } : xuống ...
 - Ctrl + d : di chuyển màn xuống
@@ -22,7 +24,7 @@
 - Shift + l : xuồng cuối ko scroll text
 - Shift + m
 
-## Di chuyển theo trục ngang:
+## :point_right: Di chuyển theo trục ngang:
 - h : sang trái
 - l: sang phải
 - w: di chuyển theo từ sang phải(các kí tự đặc biệt cũng tính là 1 từ)
@@ -36,8 +38,42 @@
 - shift + 6( ^) hoặc 0 + w : nhảy đến kí tự đầu dòng là kí tự
 - $ hoặc g_ : di chuyển đến cuối dòng
 
-## Tìm kí tự:
+## :point_right: Tìm kí tự:
 - f + <kí tự> : tìm kí tự theo chiều trái sang phải (dùng ; để lặp lại hành động hoặc .)
 - F + <kí tự> : tìm từ F theo hướng ngược lại
 - t + <kí tự> : tìm theo chiều trái sang phải kí tự ở phía trước 
 - T + <kí tự> : tìm theo chiều ngược lại ở kí tự đứng trước
+
+## :point_right: Operator 
+- d : delete
+- c : change
+- v : select
+- y : copy
+- p : paste
+
+##  :point_right: Text Objects
+- w : word (1 từ)
+- s : sentence (1 câu)
+- p : paragraph (đoạn văn)
+
+- a : around
+- i : inside ( bên trong)
+
+- i" : inside double quote
+- i' : inside single quote
+- i` : inside backtick
+- i( hoặc ib : inside singe (
+- i{ hoặc iB : inside {
+- iw : inside word
+- is : insside sentence
+- ip : inside paragraph
+- Tương tự cho a ( a", a', a`, a(, a{ ) 
+
+Example: 
+- dw : delete word 
+- diw : delte in word
+- cw, ciw
+
+> Công thức : Operator + number(optional) + motion (text object)
+
+- I need to highlight these ==very important words==.
