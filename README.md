@@ -6,7 +6,7 @@
 - [Text Objects](#point_right-text-objects)
 ## :point_right: Di chuyển theo trục dọc:
 
-- j ->  xuống
+- j ->  xuống 👇
 - k -> lên :point_right:
 - { : di chuyển lên paragraph
 - } : xuống ...
@@ -75,5 +75,3 @@ Example:
 - cw, ciw
 
 > Công thức : Operator + number(optional) + motion (text object)
-
-- I need to highlight these ==very important words==.
