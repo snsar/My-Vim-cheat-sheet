@@ -4,10 +4,11 @@
 - [Tìm kí tự](#point_right-tìm-kí-tự)
 - [Operator](#point_right-tìm-kí-tự)
 - [Text Objects](#point_right-text-objects)
+- [Registers](#-registers-)
 ## :point_right: Di chuyển theo trục dọc:
 
 - j ->  xuống 👇
-- k -> lên :point_right:
+- k -> lên ☝
 - { : di chuyển lên paragraph
 - } : xuống ...
 - Ctrl + d : di chuyển màn xuống
@@ -55,10 +56,11 @@
 - w : word (1 từ)
 - s : sentence (1 câu)
 - p : paragraph (đoạn văn)
-
+- t : tag (thường dùng trong html)
+---
 - a : around
 - i : inside ( bên trong)
-
+---
 - i" : inside double quote
 - i' : inside single quote
 - i` : inside backtick
@@ -68,10 +70,27 @@
 - is : insside sentence
 - ip : inside paragraph
 - Tương tự cho a ( a", a', a`, a(, a{ ) 
-
+---
 Example: 
 - dw : delete word 
 - diw : delte in word
 - cw, ciw
+- dt= : xoá đến trước dấu bằng tiếp theo
+- df= : xoá đến dấu bằng tiếp theo
 
-> Công thức : Operator + number(optional) + motion (text object)
+> Công thức : Operator + number(optional) + motion (text object) 🎃
+
+## 👉 Registers 
+> 1. There are many register:
+> 2. command to show all register :reg
+- "" : unnameed register (when use delete command d or yank command y save to unnamed register)  
+- "+ hoặc "* : register này có thể dùng khi copy và select text ra bên ngoài
+- Example: khi sao chép ở chrome sau đó vào vim ta dùng lệnh "+p hoặc "*p để paste hoặc ngược lại copy trong vim bằng lệnh "+y hoặc "*y
+- "_ : Black hole register. Ví dụ khi không muốn text đã xoá lưu vào unnamed register ta có thể dùng lệnh "_d
+- Ngoài ra còn có number register là các kí tự được copy gần nhất từ 0->9 là "0, "1, ..., "9
+- Còn có Register tự định nghĩa là "a -> "z
+- Còn nhiều register sẽ cập nhật sau ...
+
+> Công thức: Register + textObject 👌
+
+##  
